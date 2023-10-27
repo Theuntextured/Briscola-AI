@@ -68,6 +68,7 @@ int getCardScore(int card, int briscola, int firstCard)
 		}
 		additive += t;
 		if (t == 0 || t == 2 || t == 9 || t == 8 || t == 7) additive += 15;
+		if (t == 0) additive += 5;
 	}
 	switch (t)
 	{
